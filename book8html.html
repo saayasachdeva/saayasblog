@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Saaya's Blog!</title>
+            <link rel="icon" type="image/x-icon" href="bookfavicon2.jpeg">
+        </head>
+        <style>
+            h1 {
+                color: rgb(91, 10, 10);
+                text-align: center;
+                position: fixed;
+                top: 20px;
+                 }
+        .topnav {
+            background-color: rgb(244, 226, 176);
+            margin-bottom: 10px;
+            overflow: hidden;
+            position: fixed;
+            top: 80px;
+            }
+
+        .topnav a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: rgb(91, 10, 10);
+                color: white;
+            }
+
+        #search {
+            float: right;
+            margin-right: 16px;
+            margin-top: 12px;
+        }
+
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 10px;
+            font-size: 17px;
+        }
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .card {
+            position: relative;
+            width: 240px;
+            height: 400px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+            transform: perspective(2000px) rotateZ(0);
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+
+        }
+
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            border-radius: 10px;
+            transform-origin: left;
+            transform-style: preserve-3d;
+            transition: all 1s ease;
+        }
+
+        
+        
+        .card:hover .cover {
+            transform: rotateY(-135deg);
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .wizardofozcover {
+            height: 400px;
+        }
+       
+        #h2book {
+            padding-bottom: 5px;
+        }
+
+        p {
+            padding-bottom: 3px;
+        }
+        #h3hover {
+            color: rgb(91, 10, 10);
+            padding-right: 20px;
+
+        }
+        h3 {
+            padding-bottom: 5px;
+        }
+    </style>
+<body>
+    <h1>Welcome to Saaya's Blog!</h1>
+    
+    <div class="topnav">
+        <a class="active" href="Project.html">Home</a>
+        <a href="bookreview.html">Book Reviews!</a>
+        <a href="moviereview.html">Movie Reviews!</a>
+            <div class="search-container">
+                <button id="search">Search</button>
+                <input type="text" placeholder="Search">
+               </div>
+               <script src="search.js"></script>
+        
+    </div>
+    
+        <h3 id="h3hover">hover over the cover to see the first page!</h3> 
+    <div class="card">
+        <div class="cover">
+        <img class="wizardofozcover" src="wizardofozcover.jpeg" alt="wizardofozbookcover">
+        </div>
+        <div class="content">
+          <h2 id="h2book">Chapter One</h2>
+          <p>Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, who was a farmer, and Aunt Em, who was the farmer’s wife. Their house was small, for the lumber to build it had to be carried by wagon many miles. There were four walls, a floor and a roof, which made one room; and this room contained a rusty looking cookstove, a cupboard for the dishes, a table, three or four chairs, and the beds. Uncle Henry and Aunt Em had a big bed in one corner, and Dorothy a little bed in another corner. There was no garret at all, and no cellar—except a small hole dug in the ground, called a cyclone cellar, where the family could go in case one of those great whirlwinds arose, mighty enough to crush any building in its path. It was reached by a trap door in the middle of the floor, from which a ladder led down into the small, dark hole.</p>
+          <p>When Dorothy stood in the doorway and looked around, she could see nothing but the great gray prairie on every side.</p>
+        </div>
+</div>
+</body>
